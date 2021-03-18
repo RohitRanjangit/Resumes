@@ -1,0 +1,249 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Rohit Ranjan (http://RohitRanjan.com)
+%
+% Original repository:
+% https://github.com/deedyRanjan/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+\usepackage{fontspec}
+\usepackage{marvosym}
+\usepackage{fontawesome}
+
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Rohit}{Ranjan}{ \urlstyle{same}\href{https://rohitranjangit.github.io/}{ \faHome RohitRanjan.me } | \faMobile +919680549779 |
+\href{mailto:rohitrjn629@gmail.com}{\faGoogle rohitrjn629@gmail.com} | \href{mailto:dranjan@iitk.ac.in}{ \faEnvelope dranjan@iitk.ac.in}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Education} 
+\subsection{IIT KANPUR}
+\descript{B.Tech in Computer Science}
+\location {Jul 2018 - Jun 2022 (Expected)}
+\location{ Cum. GPA: 9.2/10.0}
+\subsection{KRISHNA PUBLIC SCHOOL}
+\location{Grad. May 2018|  Patna, India}
+\location{ Percentage: 92\%}
+\subsection{J.N.V SARAN}
+\location{Grad. May 2016|  Saran, India}
+\location{ C.G.P.A: 10.0/10.0}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Coursework}
+%\subsection{Undergraduate}
+\textbf{\textbullet{}Data Structure \& Algorithms} \\
+\textbf{\textbullet{}Computer Organization \\
+\textbullet{Software Development \& \\
+operations} \\
+\textbullet{}Modern Cryptology\\
+\textbullet{}Discrete Mathematics\\
+\textbullet{}Computational Methods in \\
+Engineering\\
+\textbullet{}Introduction to logic\\
+\textbullet{}Linear Algebra\\
+\textbullet{}Introduction to programming\\}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Skills}
+\subsection{Programming}
+\textbullet{} C \textbullet{}   C++ \textbullet{} Python \textbullet{} Matlab \\ 
+\textbullet{} Bash Scripting \textbullet Verilog \textbullet{} Haskell\\
+\subsection{Web}
+\textbullet{} CSS \textbullet{} HTML5 \textbullet{} Javascript\\
+ \textbullet{}MYSQL \textbullet{}ReactNative   \\
+\subsection{Utilities}
+\textbullet{} Linux Shell Utilities \textbullet{} Git \\
+\textbullet{} \LaTeX \textbullet{} Vim
+\section{SELF Projects}
+\textbf{\large \href{https://github.com/RohitRanjangit/chessPY}{ChessPy}}\\
+Created  a very simple \textbf{ chess\\
+	engine} using python\\
+\textbf{\large \href{https://github.com/RohitRanjangit/FlappyBirdAI}{FlappyBirdAI}}\\
+Created a \textbf{FlappyBird AI} model\\
+using NEAT Algorithm\\
+\textbf{\large \href{https://github.com/RohitRanjangit/PolySAT} {PolySAT}}\\
+Implemented a \textbf{ SAT solver} for\\
+propositional logic using the\\
+DPLL Algorithm in C++\\
+\textbf{\large \href{https://github.com/RohitRanjangit/StudentData}{StudentDATA}}\\
+Developed a \textbf{ system to handle\\
+	student database} in C++ using\\ SQL Database\\
+\textbf{\large \href{https://github.com/RohitRanjangit/Decoder}{Decoder}}\\
+Developed a decoder in Haskell to decipher substitution ciphers
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+\runsubsection{SUMMER OF CODE}
+\descript{| Fullstack Developer }
+\textbf{Prof. Sandeep Shukla}
+\location{, IIT Kanpur | May 2018 - July 2018}
+%\textbf{Under Prof. Sandeep Shukla}\\
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Developed a dynamic and scalable \textbf{\href{https://github.com/RohitRanjangit/One_Rupee}{web application}} using \textbf{Django} 
+framework from scratch as an initiative to support various NGO's in india by  
+ keeping track of records of users and their donation history
+\item Developed Backend using  \textbf{Django-REST} and used \textbf{ReactJS} to develop Frontend
+\item Established Payment Portal to handle all type of transactions using \textbf{Paytm API}
+\end{tightemize}
+\runsubsection{Boost C++ Organisation}
+\descript{| Software Developer }
+\textbf{\href{https://github.com/BoostGSoC19/astronomy}{Boost.Astronomy, GitHub}} | 
+\location{March 2019 – Present}
+\begin{tightemize}
+\item Implemented Various \textbf{Arithmetic operations}(e.g. \textbf{Cross Product}, \textbf{Dot product}, Inter-transformations) for the existing \textbf{Astronomical coordinate system}.
+\item Used \textbf{Template Meta Programming} in C++ to provide almost no run-time overhead and allows users to write scientifically
+infallible code by detecting all the errors at the compile time 
+\end{tightemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Projects}
+%\runsubsection{5G/6G Development}
+%\\
+%\location{\textbf{Prof. Aditya K. Jagannatham} | Jul 2020-Present}
+%%\textbf{Under Prof. Aditya K. Jagannatham}\\
+%\begin{tightemize}
+%\item Analysed various existing wireless technology including \textbf{2G, 3G, 4G \& 5G} technology \& it’s
+%embedded technologies like \textbf{MIMO, OFDM and CDMA}
+%\item Designed a \textbf{Bayesian Decision model} using \textbf{Maximum likelihood estimation}, \textbf{Bayesian Classifiers} and \textbf{kernel-based} density estimation to distinguish foreground and background of an image of cheetah
+%\item Acheived maximum \textbf{Accuracy of 96.3\%} for the above model in Image distinction
+%\end{tightemize}
+%\\
+\runsubsection{\href{https://github.com/RohitRanjangit/CavesGame}{CS641: Caves Game}}
+\\
+\location{Prof. Manindra Agrawal | Jan 2020 - June 2020 | Course Project}
+%\textbf{Under Prof. Manindra Agrawal}\\
+\begin{tightemize}
+	\item Explored and Analysed different existing classical and \textbf{modern Cryptographic sytem} standard methods and their weaknesses
+	\item Completed all 7 levels of game by designing \textbf{chosen plaintext attack} for weaker models of \textbf{AES,DES} and \textbf{RSA} and extracted the keys used to encrypt data
+\end{tightemize}
+%\\
+\runsubsection{\href{https://github.com/RohitRanjangit/P2P-video-conferencing-app}{P2P Video Conferencing App}}
+\\
+\location{Association for computing Activities, Dept. of CSE, IIT Kanpur }
+\begin{tightemize}
+	\item Designed a basic \textbf{web application} which connects multiple registered users allowing them to communicate between each other via \textbf{voice\& video call}
+	\item Used \textbf{Python-Flask framework} to handle all backend necessary processes and methods(e.g\textbf{ User Registeration,SignIn,Sign Off}.. )
+	\item Used a Javascript open framework named \textbf{WebRTC} to establish real-time communication between peers and enabling them to talk seamlessly
+\end{tightemize}
+%\\
+\runsubsection{\href{https://github.com/life-iitk}{LIFE@IITK}}
+\\
+\location{Science \& Technology Council , IIT Kanpur}
+\begin{tightemize}
+	\item Collaborated with app-developers team to create a \textbf{web application} which streamlines the various aspects of the day-to-day lives of campus students
+	\item Worked with frontend team to design a \textbf{Map Page} using \textbf{ReactJS} showing ongoing events in IITK with pinned locationon map according to event place
+	\item Used \textbf{Django-REST} to create  a \textbf{Rest API} which helps in events data serialization
+\end{tightemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Awards \& Acheivements} 
+\begin{tabular}{rll}
+2019	  & \textbf{Academic Excellence Award}, Amongst Top 6\% students of the department.\\
+2018	    &\textbf{Academic Excellence Award}, given to Top 10\% of the batch\\
+2019	      & \textbf{Samsung Star Scholar}, awarded to 150 JNV students\\
+2019	      & \textbf{All India Rank 1}, Indian Engineering Olympiad amongst 15000 candidates\\
+2019	      & \textbf{All India Rank 782}, JEE Advanced amongst 1,60,000 candidates\\
+2019	      & \textbf{All India Rank 367}, JEE Main
+amongst 1.4 million candidates
+\end{tabular}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PUBLICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Miscellaneous} 
+
+\textbullet{} Mentored freshers in ACA project \textbf{{ FlappyBirdAI using NEAT}} \\
+\hspace{2mm} organized by Dept. of Computer Science \& Engineering\\
+\textbullet{} \textbf{ Senior Web Executive} in Udghosh'19, IIT Kanpur
+\newline
+\textbullet{} \textbf{ Senior Marketing Executive} in Udghosh'19, IIT Kanpur
+\newline
+\textbullet{} Received First Prize, National Level Chess Championship  
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}

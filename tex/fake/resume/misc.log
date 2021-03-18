@@ -1,0 +1,498 @@
+This is LuaHBTeX, Version 1.12.0 (MiKTeX 20.6.29) (format=lualatex 2020.7.10)  23 JUL 2020 15:23
+ restricted system commands enabled.
+**misc.tex
+(./misc.tex
+LaTeX2e <2020-02-02> patch level 5
+Lua module: luaotfload-main 2020-05-06 3.14 luaotfload entry point
+Lua module: luaotfload-init 2020-05-06 3.14 luaotfload submodule / initializatio
+n
+Lua module: lualibs 2020-05-01 2.71 ConTeXt Lua standard libraries.
+Lua module: lualibs-extended 2020-05-01 2.71 ConTeXt Lua libraries -- extended c
+ollection.
+Lua module: luaotfload-log 2020-05-06 3.14 luaotfload submodule / logging
+Lua module: luaotfload-parsers 2020-05-06 3.14 luaotfload submodule / filelist
+Lua module: luaotfload-configuration 2020-05-06 3.14 luaotfload submodule / conf
+ig file reader
+luaotfload | conf : Root cache directory is "C:/Users/rohit/AppData/Local/MiKTeX
+/luatex-cache/generic-dev/names".
+luaotfload | init : Loading fontloader "fontloader-2020-05-06.lua" from kpse-res
+olved path "C:/Program Files/MiKTeX/tex/luatex/luaotfload/fontloader-2020-05-06.
+lua".
+Lua-only attribute luaotfload@noligature = 1
+Lua-only attribute luaotfload@syllabe = 2
+luaotfload | init : Context OpenType loader version 0x1.8e353f7ced917p+1
+Lua module: luaotfload-fallback 2020-05-06 3.14 luaotfload submodule / fallback
+Lua module: luaotfload-multiscript 2020-05-06 3.14 luaotfload submodule / multis
+cript
+Lua module: luaotfload-script 2020-05-06 3.14 luaotfload submodule / Script help
+ers
+Inserting `luaotfload.node_processor' at position 1 in `pre_linebreak_filter'.
+Inserting `luaotfload.node_processor' at position 1 in `hpack_filter'.
+Lua module: luaotfload-loaders 2020-05-06 3.14 luaotfload submodule / callback h
+andling
+Inserting `luaotfload.define_font' at position 1 in `define_font'.
+Lua module: luaotfload-database 2020-05-06 3.14 luaotfload submodule / database
+Lua module: luaotfload-unicode 2020-05-06 3.14 luaotfload submodule / Unicode he
+lpers
+Lua module: luaotfload-colors 2020-05-06 3.14 luaotfload submodule / color
+Lua-only attribute luaotfload_color_attribute = 3
+Lua module: luaotfload-resolvers 2020-05-06 3.14 luaotfload submodule / resolver
+s
+luaotfload | conf : Root cache directory is "C:/Users/rohit/AppData/Local/MiKTeX
+/luatex-cache/generic-dev/names".
+Lua module: luaotfload-features 2020-05-06 3.14 luaotfload submodule / features
+Lua module: luaotfload-harf-define 2020-05-06 3.14 luaotfload submodule / databa
+se
+Inserting `luaotfload.harf.strip_prefix' at position 1 in `find_opentype_file'.
+Inserting `luaotfload.harf.strip_prefix' at position 1 in `find_truetype_file'.
+Lua module: luaotfload-harf-plug 2020-05-06 3.14 luaotfload submodule / database
+Inserting `Harf pre_output_filter callback' at position 1 in `pre_output_filter'
+.
+Inserting `Harf wrapup_run callback' at position 1 in `wrapup_run'.
+Inserting `Harf finish_pdffile callback' at position 1 in `finish_pdffile'.
+Inserting `Harf glyph_info callback' at position 1 in `glyph_info'.
+Lua module: luaotfload-letterspace 2020-05-06 3.14 luaotfload submodule / color
+Lua module: luaotfload-embolden 2020-05-06 3.14 luaotfload submodule / color
+Lua module: luaotfload-notdef 2020-05-06 3.14 luaotfload submodule / color
+Lua module: luaotfload-suppress 2020-05-06 3.14 luaotfload submodule / suppress
+Lua module: luaotfload-szss 2020-05-06 3.14 luaotfload submodule / color
+Lua module: luaotfload-auxiliary 2020-05-06 3.14 luaotfload submodule / auxiliar
+y functions
+Inserting `luaotfload.aux.set_sscale_dimens' at position 1 in `luaotfload.patch_
+font'.
+Inserting `luaotfload.aux.set_font_index' at position 2 in `luaotfload.patch_fon
+t'.
+Inserting `luaotfload.aux.patch_cambria_domh' at position 3 in `luaotfload.patch
+_font'.
+Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_fon
+t_unsafe'.
+Inserting `luaotfload.aux.set_capheight' at position 4 in `luaotfload.patch_font
+'.
+Inserting `luaotfload.aux.set_xheight' at position 5 in `luaotfload.patch_font'.
+Lua module: luaotfload-tounicode 2020-05-06 3.14 luaotfload submodule / tounicod
+e
+Inserting `luaotfload.rewrite_fontname' at position 6 in `luaotfload.patch_font'
+. L3 programming layer <2020-06-18>
+! Undefined control sequence.
+l.1 \cvsection
+            {Miscellaneous}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \cvsection{M
+              iscellaneous}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+l.4 \fontsize{10pt}{1.05em}\bodyfontlight
+                                       \upshape\color{text}\selectfont
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+luaotfload | db : Font names database loaded from C:/Users/rohit/AppData/Local/M
+iKTeX/luatex-cache/generic-dev/names/luaotfload-names.luc
+! Undefined control sequence.
+l.4 ...ize{10pt}{1.05em}\bodyfontlight\upshape\color
+                                                  {text}\selectfont
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 1--5
+[]Miscellaneous
+ []
+
+
+Overfull \hbox (17.5pt too wide) in paragraph at lines 1--5
+\TU/lmr/m/n/10 text 
+ []
+
+
+! LaTeX Error: Environment cvitems undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.6 \begin{cvitems}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8     \item {
+             Mentored \textbf{12} students in ACA project \textbf{FlappyBird...
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (22.5pt too wide) in paragraph at lines 8--11
+\TU/lmr/m/n/10 Men-
+ []
+
+
+Overfull \hbox (22.81pt too wide) in paragraph at lines 8--11
+\TU/lmr/m/n/10 tored
+ []
+
+
+Overfull \hbox (11.5pt too wide) in paragraph at lines 8--11
+\TU/lmr/bx/n/10 12
+ []
+
+
+Overfull \hbox (16.72pt too wide) in paragraph at lines 8--11
+\TU/lmr/m/n/10 stu-
+ []
+
+
+Overfull \hbox (23.11pt too wide) in paragraph at lines 8--11
+\TU/lmr/m/n/10 dents
+ []
+
+
+Overfull \hbox (8.34pt too wide) in paragraph at lines 8--11
+\TU/lmr/m/n/10 in
+ []
+
+
+Overfull \hbox (21.94pt too wide) in paragraph at lines 8--11
+\TU/lmr/m/n/10 ACA
+ []
+
+
+Overfull \hbox (30.59pt too wide) in paragraph at lines 8--11
+\TU/lmr/m/n/10 project
+ []
+
+
+Overfull \hbox (26.24pt too wide) in paragraph at lines 8--11
+\TU/lmr/bx/n/10 Flap-
+ []
+
+
+Overfull \hbox (15.97pt too wide) in paragraph at lines 8--11
+\TU/lmr/bx/n/10 py-
+ []
+
+
+Overfull \hbox (19.94pt too wide) in paragraph at lines 8--11
+\TU/lmr/bx/n/10 Bir-
+ []
+
+
+Overfull \hbox (19.44pt too wide) in paragraph at lines 8--11
+\TU/lmr/bx/n/10 dAI
+ []
+
+
+Overfull \hbox (14.76pt too wide) in paragraph at lines 8--11
+\TU/lmr/bx/n/10 us-
+ []
+
+
+Overfull \hbox (15.33pt too wide) in paragraph at lines 8--11
+\TU/lmr/bx/n/10 ing
+ []
+
+
+Overfull \hbox (32.29pt too wide) in paragraph at lines 8--11
+\TU/lmr/bx/n/10 NEAT
+ []
+
+
+Overfull \hbox (12.25pt too wide) in paragraph at lines 8--11
+\TU/lmr/m/n/10 or-
+ []
+
+
+Overfull \hbox (13.33pt too wide) in paragraph at lines 8--11
+\TU/lmr/m/n/10 ga-
+ []
+
+
+Overfull \hbox (22.78pt too wide) in paragraph at lines 8--11
+\TU/lmr/m/n/10 nized
+ []
+
+
+Overfull \hbox (10.56pt too wide) in paragraph at lines 8--11
+\TU/lmr/m/n/10 by
+ []
+
+
+Overfull \hbox (24.31pt too wide) in paragraph at lines 8--11
+\TU/lmr/m/n/10 Dept.
+ []
+
+
+Overfull \hbox (8.06pt too wide) in paragraph at lines 8--11
+\TU/lmr/m/n/10 of
+ []
+
+
+Overfull \hbox (23.88pt too wide) in paragraph at lines 8--11
+\TU/lmr/m/n/10 Com-
+ []
+
+
+Overfull \hbox (23.37pt too wide) in paragraph at lines 8--11
+\TU/lmr/m/n/10 puter
+ []
+
+
+Overfull \hbox (16.11pt too wide) in paragraph at lines 8--11
+\TU/lmr/m/n/10 Sci-
+ []
+
+
+Overfull \hbox (18.88pt too wide) in paragraph at lines 8--11
+\TU/lmr/m/n/10 ence
+ []
+
+
+Overfull \hbox (7.78pt too wide) in paragraph at lines 8--11
+\TU/lmr/m/n/10 &
+ []
+
+
+Overfull \hbox (15.7pt too wide) in paragraph at lines 8--11
+\TU/lmr/m/n/10 En-
+ []
+
+
+Overfull \hbox (11.11pt too wide) in paragraph at lines 8--11
+\TU/lmr/m/n/10 gi-
+ []
+
+
+Overfull \hbox (21.69pt too wide) in paragraph at lines 8--11
+\TU/lmr/m/n/10 neer-
+ []
+
+
+Overfull \hbox (13.34pt too wide) in paragraph at lines 8--11
+\TU/lmr/m/n/10 ing
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.11     \item {
+              \textbf{Senior Web Executive} in Udghosh'19, IIT Kanpur}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (15.49pt too wide) in paragraph at lines 11--13
+\TU/lmr/bx/n/10 Se-
+ []
+
+
+Overfull \hbox (20.07pt too wide) in paragraph at lines 11--13
+\TU/lmr/bx/n/10 nior
+ []
+
+
+Overfull \hbox (22.59pt too wide) in paragraph at lines 11--13
+\TU/lmr/bx/n/10 Web
+ []
+
+
+Overfull \hbox (17.46pt too wide) in paragraph at lines 11--13
+\TU/lmr/bx/n/10 Ex-
+ []
+
+
+Overfull \hbox (14.21pt too wide) in paragraph at lines 11--13
+\TU/lmr/bx/n/10 ec-
+ []
+
+
+Overfull \hbox (10.22pt too wide) in paragraph at lines 11--13
+\TU/lmr/bx/n/10 u-
+ []
+
+
+Overfull \hbox (18.68001pt too wide) in paragraph at lines 11--13
+\TU/lmr/bx/n/10 tive
+ []
+
+
+Overfull \hbox (8.34pt too wide) in paragraph at lines 11--13
+\TU/lmr/m/n/10 in
+ []
+
+
+Overfull \hbox (53.68pt too wide) in paragraph at lines 11--13
+\TU/lmr/m/n/10 Udghosh’19,
+ []
+
+
+Overfull \hbox (14.72pt too wide) in paragraph at lines 11--13
+\TU/lmr/m/n/10 IIT
+ []
+
+
+Overfull \hbox (21.67pt too wide) in paragraph at lines 11--13
+\TU/lmr/m/n/10 Kan-
+ []
+
+
+Overfull \hbox (15.04pt too wide) in paragraph at lines 11--13
+\TU/lmr/m/n/10 pur
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.13     \item {
+              \textbf{Senior Marketing Executive} in Udghosh'19, IIT Kanpur}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (15.49pt too wide) in paragraph at lines 13--15
+\TU/lmr/bx/n/10 Se-
+ []
+
+
+Overfull \hbox (20.07pt too wide) in paragraph at lines 13--15
+\TU/lmr/bx/n/10 nior
+ []
+
+
+Overfull \hbox (25.08pt too wide) in paragraph at lines 13--15
+\TU/lmr/bx/n/10 Mar-
+ []
+
+
+Overfull \hbox (19.32pt too wide) in paragraph at lines 13--15
+\TU/lmr/bx/n/10 ket-
+ []
+
+
+Overfull \hbox (15.33pt too wide) in paragraph at lines 13--15
+\TU/lmr/bx/n/10 ing
+ []
+
+
+Overfull \hbox (17.46pt too wide) in paragraph at lines 13--15
+\TU/lmr/bx/n/10 Ex-
+ []
+
+
+Overfull \hbox (14.21pt too wide) in paragraph at lines 13--15
+\TU/lmr/bx/n/10 ec-
+ []
+
+
+Overfull \hbox (10.22pt too wide) in paragraph at lines 13--15
+\TU/lmr/bx/n/10 u-
+ []
+
+
+Overfull \hbox (18.68001pt too wide) in paragraph at lines 13--15
+\TU/lmr/bx/n/10 tive
+ []
+
+
+Overfull \hbox (8.34pt too wide) in paragraph at lines 13--15
+\TU/lmr/m/n/10 in
+ []
+
+
+Overfull \hbox (53.68pt too wide) in paragraph at lines 13--15
+\TU/lmr/m/n/10 Udghosh’19,
+ []
+
+
+Overfull \hbox (14.72pt too wide) in paragraph at lines 13--15
+\TU/lmr/m/n/10 IIT
+ []
+
+
+Overfull \hbox (21.67pt too wide) in paragraph at lines 13--15
+\TU/lmr/m/n/10 Kan-
+ []
+
+
+Overfull \hbox (15.04pt too wide) in paragraph at lines 13--15
+\TU/lmr/m/n/10 pur
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15     \item {
+              Received First Prize, National Level Chess Championship}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: \begin{document} ended by \end{cvitems}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 \end{cvitems}
+                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+)
+! Emergency stop.
+<*> misc.tex
+         
+*** (job aborted, no legal \end found)
+
+
+
+Here is how much of LuaTeX's memory you used:
+ 23 strings out of 480878
+ 100000,319454 words of node,token memory allocated 4811 words of node memory still in use:
+   75 hlist, 25 disc, 5 local_par, 1 dir, 176 glue, 21 kern, 48 penalty, 274 gly
+ph, 41 attribute, 39 glue_spec, 41 attribute_list, 1 temp nodes
+   avail lists: 3:1,4:2,5:6,9:3,10:1
+ 17762 multiletter control sequences out of 65536+200000
+ 26 fonts using 3390395 bytes
+ 15i,1n,15p,111b,125s stack positions out of 5000i,500n,10000p,200000b,50000s
+!  ==> Fatal error occurred, no output PDF file produced!
