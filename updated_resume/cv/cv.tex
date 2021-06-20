@@ -1,0 +1,332 @@
+%% start of file `cv.tex'.
+%% Copyright 2006-2015 Xavier Danaux (xdanaux@gmail.com).
+%% Modifications 2017 Mayank Mittal (mayankm.iitk@gmail.com)
+%% Modifications 2019 Ayush Gupta (7ayushgupta@gmail.com)
+%% Modifications 2021 Rohit Ranjan (rohitrjn629@gmail.com)
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,roman]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+%%----------- NEW COLOR---------------------
+\RequirePackage{filecontents}
+\begin{filecontents*}{moderncvcolorburgundy.sty}
+%% start of file `moderncvcolorburgundy.sty'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{moderncvcolorburgundy}[2013/02/09 v1.3.0 modern curriculum vitae and letter color scheme: burgundy]
+
+\definecolor{color0}{rgb}{0,0,0}% black
+\definecolor{color1}{rgb}{0.545098,0,0}% burgundy
+\definecolor{color1}{rgb}{0.4,0.4,0.4} % Testcolor-------being used
+\definecolor{color2}{rgb}{0.45,0.45,0.45}% grey
+\endinput
+%% end of file `moderncvcolorburgundy.sty'.
+\end{filecontents*}
+
+% moderncv themes
+\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
+\moderncvcolor{blue}                               % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
+\renewcommand{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+%\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+%\usepackage[scale=0.75]{geometry}
+\usepackage[left=0.65 in,top=0.7in,right=0.65in,bottom=0.7in]{geometry} % Document margins
+
+\setlength{\hintscolumnwidth}{2.8cm}                % if you want to change the width of the column with the dates
+
+% personal data
+\name{Rohit}{Ranjan}
+
+%\address{street and number}{postcode city}{country}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+\phone[mobile]{+91~9680549779}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+%\phone[fixed]{+2~(345)~678~901}
+%\phone[fax]{+3~(456)~789~012}
+\email{dranjan@iitk.ac.in}                               % optional, remove / comment the line if not wanted
+\homepage{https://github.com/RohitRanjangit/RohitRanjangit.github.io}                         % optional, remove / comment the line if not wanted
+\social[linkedin]{https://www.linkedin.com/in/rohitranjan629/}                        % optional, remove / comment the line if not wanted
+%\social[twitter]{jdoe}                             % optional, remove / comment the line if not wanted
+\social[github]{RohitRanjangit}                              % optional, remove / comment the line if not wanted
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+
+% bibliography adjustements (only useful if you make citations in your resume, or print a list of publications using BibTeX)
+%   to show numerical labels in the bibliography (default is to show no labels)
+\makeatletter\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}\makeatother
+%   to redefine the bibliography heading string ("Publications")
+%\renewcommand{\refname}{Articles}
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+
+%_------- PACKAGES FROM ANOTHER
+\usepackage{array}
+\usepackage{tabulary}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{fontawesome}
+\usepackage{calrsfs}\usepackage[english]{babel}
+
+%--- MODIFY SECTION STYLE
+% \makeatletter
+% \renewcommand\sectionfont{\bfseries}
+% \renewcommand*{\sectionstyle}[1]{{%
+%   \sectionfont\rule[-.5ex]{0pt}{0em}\MakeUppercase{#1}}}
+% \makeatother
+
+%% use \scshape in all section titles
+\renewcommand{\sectionfont}{\normalfont\Large\mdseries\scshape}
+
+%---------- REMOVE DOT
+\usepackage{xpatch}
+\xpatchcmd{\cventry}{.\strut}{\strut}{}{}
+
+%LINK COLOR
+\newcommand\Colorhref[3][blue]{\href{#2}{\small\color{#1}#3}}
+
+%----------------------------------------------------------------------------------
+%            content
+%--------------------------------------------------------------------------------
+
+\begin{document}
+
+%-----       resume       --------------------------------------------------------
+
+%\makecvtitle
+{\fontsize{0.9cm}{1cm}\selectfont {ROHIT RANJAN}} \hfill \textbf{E-mail: }rohitrjn629@gmail.com\\
+Senior, Dept. of Computer Science \& Engineering\hfill \textbf{Github: }\Colorhref{https://github.com/RohitRanjangit}{RohitRanjangit} \\ {IIT Kanpur}\hfill \textbf{Mobile: +91-96805-49779}\\
+\noindent\rule[1ex]{\linewidth}{1pt}
+
+\vspace{-7pt}
+
+\section{Education}
+\cventry{2018--present}{Bachelor of Technology}{Indian Institute of Technology}{Kanpur}{\textit{CGPA- 9.23*/10}}{Major in Computer Science \& Engineering}  % arguments 3 to 6 can be left empty
+
+\cventry{2018}{Grade XII}{Krishna Public School}{Patna}{\textit{Result: 92\%}}{}
+\cventry{2016}{Grade X}{Jawahar Navodaya Vidyalaya}{Saran}{\textit{CGPA-10.0/10.0}}{}
+
+\section{Work Experience}
+
+\cventry{May'21--present\\
+\Colorhref{https://example.com}{report}}{Cisco Systems Inc, Technical Undergraduate Intern}{}{}{}{
+\textit{Software Developer,Team Falcon,} Mentor: Chinmaya Kumar Panda
+% \newline
+\begin{itemize}%
+\item Performed Load testing of \textbf{Broadworks} User billing Apis, got successful smoke test outcomes
+\item Design \textbf{Grafana} dashboard to show User Billing Api performance statistics with analysis of available metrics like request volume, report reliability  from influxDB data source
+\item Scripted \textbf{Jmeter} jmx code from scratch to create stress on server handling User Billing Apis
+\end{itemize}}
+
+\vspace{4pt}
+
+\cventry{May '19--Jul' 19 \\
+\Colorhref{https://github.com/RohitRanjangit/One\_Rupee}{github}\\}
+{Summer of Code, IIT Kanpur}{}{}{}{
+\textit{IIT Kanpur}, Supervisor: Prof. Sandeep Shukla
+\begin{itemize}
+\item Developed a dynamic and scalable web application using
+\textbf{Django} from scratch as an initiative to support NGOs of India by keeping track of records of users
+and their donation history
+\item Implemented various functionalities that allows registered
+users to choose from various NGOs to donate, as well as the
+registered NGOs to list their mission and necessities
+%\item Setup robust \textbf{underwater computer vision pipeline} using Deep Learning \& traditional IP
+%\begin{itemize}
+%    \item Created \textbf{multi-class dataset} of labeled underwater photos, trained and evaluated custom \& YOLO object detection models, setup realtime inference on Jetson TX2 
+%    \item Implemented a image preprocessing algorithm based on of \textbf{pixel-based fusion} technique
+%\end{itemize}
+\item Developed whole Backend using Django and
+Django-REST, used ReactJS to develop Frontend
+\item Established a Payment Portal to handle all type of
+transactions using Paytm payment API
+\end{itemize}}
+
+%\vspace{4pt}
+%
+%\cventry{May '19--Oct '19 \\
+%\Colorhref{http://7ayushgupta.github.io/realtime-dense-mapping-draft.pdf}{draft}}{Realtime Onboard Dense RGB-D Mapping on Unmanned Aerial Vehicles}{}{}{}{
+%\textit{Intelligent Guidance \& Control Laboratory,} Supervisor: Prof. Mangal Kothari
+%% \newline
+%\begin{itemize}%
+%% \renewcommand\labelitemi{--}
+%\item \textbf{Benchmarked} various approaches such as \texttt{REMODE \& RTAB-Map} against their computational and energy requirements, and modified publically available codes to process RGB pointclouds
+%\item Performed a literature review of different approaches related to \textbf{3D mapping} of the environment, in particular, using monocular and stereo cameras on a Jetson TX2 onboard  
+%\end{itemize}}
+%
+%\cventry{Dec '17--Apr '18 \\
+%\Colorhref{https://github.com/7ayushgupta/Humanoid-IITK}{github}\\}
+%{Design \& development of bipedal protoype of kid-sized humanoid}{}{}{}{
+%\textit{IIT Kanpur}, Supervisor: Prof. Ashish Dutta
+%\begin{itemize}%
+%\item Worked on the walking mechanism of humanoid, capable of performing statically stable walking
+%\item Implemented the MATLAB simulated \textbf{inverse kinematics} walking algorithm based on zero moment point (ZMP) criteria on the actual robot using ROS
+%\item Developed a web-enabled graphical user interface for debugging and \textbf{monitoring diagnostics} along with realtime status of the robot using ROS web-bridge server, JavaScript and CSS
+%\end{itemize}}
+
+\section{Open Source Contribution}
+
+\cventry{Apr'20--May'20\\
+	\Colorhref{https://github.com/BoostGSoC19/astronomy/tree/develop}{github}}{Boost C++ Organization}{}{}{}{
+	\textit{Software Developer}, Github Boost.Astronomy
+	% \newline
+	\begin{itemize}%
+		\item Integrated Boost.Units with the base coordinate
+		system and restructured all the classes to make them compatible with Boost.Units to provide a robust astronomical
+		coordinate system
+		\item Implemented \textbf{3D-Arithmetic Operations}(eg. Unit vector, CrossProduct etc..) for the existing
+		Astronomical Coordinate system using Boost::Geometry
+		and Boost::Units library
+		\item Wrote unit tests for existing and newly added features
+\end{itemize}}
+
+%\vspace{4pt}
+%
+%\cventry{May '19--Jul' 19 \\
+%	\Colorhref{https://github.com/AUV-IITK}{github}\\}
+%{Summer of Code, IIT Kanpur}{}{}{}{
+%	\textit{IIT Kanpur}, Supervisor: Prof. Sandeep Shukla
+%	\begin{itemize}
+%		\item Developed a dynamic and scalable web application using
+%		\textbf{Django} framework from scratch as an initiative to support
+%		various NGOs of India by keeping track of records of users
+%		and their donation history
+%		\item Implemented various functionalities that allows registered
+%		users to choose from various NGOs to donate, as well as the
+%		registered NGOs to list their mission and necessities
+%		%\item Setup robust \textbf{underwater computer vision pipeline} using Deep Learning \& traditional IP
+%		%\begin{itemize}
+%		%    \item Created \textbf{multi-class dataset} of labeled underwater photos, trained and evaluated custom \& YOLO object detection models, setup realtime inference on Jetson TX2 
+%		%    \item Implemented a image preprocessing algorithm based on of \textbf{pixel-based fusion} technique
+%		%\end{itemize}
+%		\item Developed whole Backend system using Django and
+%		Django-REST, used ReactJS to develop Frontend
+%		\item Established a Payment Portal to handle all type of
+%		transactions using Paytm API, used PythonAnyWhere for hosting
+%\end{itemize}}
+
+\section{Projects}
+
+\cventry{Jan '21-May'21\\
+\Colorhref{https://github.com/RohitRanjangit/C-Compiler-CS335}{github}}{C-Compiler-CS335: arcx86}{}{}{}{
+\textit{Course Project, Compiler Design}, Prof: Amey Karkare
+\begin{itemize}%
+\item Implemented a fully working Standard-\textbf{C} language compiler in \textbf{Python3} from scratch supporting almost all standard C Syntax and functions, with target \textbf{X86\_64} Intel Acrchitecture
+\item Wrote complete code for conversion of intermediate code to target specific architecture\\(\textbf{Intel i7}) \textbf{Assembly} language with efficient register allocation and stack space optimization
+\item Supported advanced features like struct return, infinte level of recursion with constant fold optimization, got almost same compilation time and accuracy comparing to gcc compiler
+\item Used Python3-pip PLY library to implement scanner and parser, made use of Hierarchial Symbol table structure concept for semantic analysis and intermediate code generation
+\end{itemize}}
+
+\cventry{Jan '21-May'21\\
+	\Colorhref{https://github.com/RohitRanjangit/CS425\_Assignments}{github}}{Computer Networking}{}{}{}{
+	\textit{Assignments, Computer Networks}, Prof: Swaprava Nath
+	\begin{itemize}%
+		\item Implemented \textbf{HammingCode}(n,k) algorithm to encode pixels of an image and devised an self-correcting implementation for decoding and error correction
+		\item Established two way communication between two servers using Socket API, used Stop \& Wait ARQ(Automated Repeat reQuest) and \textbf{Go-Back-N ARQ} protocols for message transfer. Validated incoming messages through CRC(Cyclic Redundancy Check)
+		\item Integrated Distributed Bellman-Ford Shortest Path Routing Algorithm for robust generation of \textbf{routing tables} at hops in Network Topology of size of n routers 
+\end{itemize}}
+
+\cventry{Sep '20-Dec'20\\
+	\Colorhref{https://github.com/RohitRanjangit/CS330\_Assignments}{github}}{Building GemOS}{}{}{}{
+	\textit{Course Project, Operating Systems}, Prof: Debadatta Mishra
+	\begin{itemize}%
+		\item Implemented file system syscalls in \textbf{C} including open, write, pipe, dup etc.
+		\item Constructed multilevel \textbf{paging management} system for syscalls like mmap, munmap and mprotect with support for huge page of size 2 Mega Bytes
+		\item Developed a message queue mechanism that facilitates \textbf{inter-process communication} using pipes, included features like broadcasting,blocking messages
+		\item Designed a simple \textbf{debugger} with support for features like setting/removing breakpoint, retrieval of register info, backtrace to analyse call stack of process
+\end{itemize}}
+\vspace{3pt}
+
+\cventry{Jan '20-May'20\\
+	\Colorhref{https://github.com/RohitRanjangit/CavesGame}{github}}{Decrypting Caves Game}{}{}{}{
+	\textit{Course Project, Modern Cryptology}, Prof: Manindra Agarwal
+	\begin{itemize}%
+		\item Explored and Analysed different existing classical and
+		modern \textbf{Cryptographic} methods and their weaknesses
+		\item Completed all 7 levels of game by designing \textbf{chosen
+		plain-text} attack for weaker models of AES,DES and
+		RSA and extracted level entry keys to decrypt data.
+\end{itemize}}
+
+
+
+\section{Academic Achievements}
+\cvitem{2018-19}{\textbf{Academic Excellence Award} , amongst Top 6\% students of the department}
+\cvitem{2018}{\textbf{Academic Excellence Award} , given to Top 10\% of the batch}
+\cvitem{2018}{\textbf{All India Rank 782}, Joint Entrance Examination Advanced among 200,000 candidates}
+\cvitem{2018}{\textbf{All India Rank 367}, Joint Entrance Examination Mains among 1.5 million candidates}
+\cvitem{2019}{\textbf{All India Rank 1} , Indian Engineering Olympiad}
+\cvitem{2018,19 \&20}{\textbf{Samsung  Star  Scholar}, awarded to students graduated from J.N.V and 	performing
+	academically well in IITs}
+
+\section{Technical skills}
+\cvitem{\textbf{Programming:}}{C/C++, Java, Python3, Haskell, Bash Scripting, Verilog}
+\cvitem{\textbf{Development:}}{HTML5, CSS, Javascript, SQL, React Native, InfluxDB}
+\cvitem{\textbf{Utils/Platform:}}{Linux Shell Utilities, Git, Vim, Matlab, Octave,{\LaTeX}}
+\cvitem{\textbf{Libraries/Apis:}}{ScoketAPI, Numpy, Matplotlib, Pandas, TensorFlow, Scipy}
+
+\section{Relevant Coursework}
+\begin{tabular}{l l l}		
+		Data Structures and Algorithms* \hspace{0.3cm} &    Fundamentals of Programming in C* & \hspace{0.25cm} Multivariate Calculus*\\
+		Linear Algebra & Probability* & \hspace{0.4cm}Discrete Mathematics\\
+		Computer Organization & Operating Systems* & \hspace{0.4cm}Software Development and Operations\\
+		Compiler Design* & Modern Cryptology* & \hspace{0.4cm}Database Management System*\\
+		Introduction to ML* & Computer Networks* & \hspace{0.4cm}Computational Methods in Engg.* \\
+		
+\end{tabular}\\
+%\cvitem{}{\hfill \small{\textit{(i) to be completed in Fall 2019, (*): exceptional performance in course}}}
+\cvitem{}{\small{(*): excellent performance in course}}
+
+\section{Mini/Self Projects}
+\cventry{Jan '20--Mar '20}{FlappyBirdAI}{\Colorhref{https://github.com/RohitRanjangit/FlappyBirdAI}{github}}{}{}{
+\begin{itemize}%
+\item Created a simple bird game using Python Pygame library and Implemented Neat AI algorithm
+\end{itemize}}
+
+\cventry{Apr '21--May'21}{StockMarket}{\Colorhref{https://github.com/RohitRanjangit/CS315}{github}}{}{}{
+\begin{itemize}%
+% \renewcommand\labelitemi{--}
+\item Designed Schema for a stock market and analysed query runtime for different database engines
+\end{itemize}}
+
+%\cventry{Apr '18--Mar '19}{Secretary}{Consulting Club}{IIT Kanpur}{}{
+%\begin{itemize}%
+%\item Successfully prepared and delivered lecture to the campus community on introductory Machine Learning and Data Science
+%\item Founding member of the Hobby Group, aiming to work on outsourced consulting projects, with emphasis on insights from collected data
+%\end{itemize}}
+
+\section{Miscellaneous}
+\cvitem{Aug '19}{Senior \textbf{Web Executive} in Udghosh’19, IIT Kanpur}
+\cvitem{Oct '20}{Developed a \textbf{decoder} in Haskell to decipher monoalphabetic substitution ciphers}
+\cvitem{Dec '20}{Wrote a python script to cartoonize an image using \textbf{opencv} library[\Colorhref{https://github.com/RohitRanjangit/Image-Cartoonizer}{github}]} 
+%\cvitem{Mar '18}{Demonstrated application generated summaries of the latest news based on the \textbf{current trending hashtags} on Twitter using Natural Language Processing [\Colorhref{https://github.com/umang-malik/code.fun.do}{github}]} 
+\cvitem{Jan '20}{\textbf{Mentor} in ACA project organized by Dept. of Computer Science \& Engineering}
+\cvitem{May '21}{Created grafana panels to analyse system statistics, used python \textbf{psutil} to get data}
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%   to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+% \nocite{*}
+% \bibliographystyle{plain}
+% \bibliography{publications}                        % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+\end{document}
